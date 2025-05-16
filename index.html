@@ -1,5 +1,257 @@
-<p>
-    <h>
-        Hello people
-    </h>
-</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sri Harshavardhan Pulluru | Data Analyst Portfolio</title>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f9;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+    #tsparticles {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    header {
+      background: linear-gradient(90deg, #2c3e50 0%, #3498db 100%);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      position: relative;
+      background-attachment: fixed;
+    }
+    .svg-illustration {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #2c3e50;
+      font-size: 1.8em;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #3498db;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    .project, .experience {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project:hover, .experience:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+    .project img, .experience img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      border-radius: 12px;
+    }
+    .project-content {
+      flex: 1;
+    }
+    .project-content h3 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+    .project-content a {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .project-content a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .skills-item {
+      flex: 1 1 45%;
+      background-color: white;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .skills-item img {
+      width: 40px;
+      height: 40px;
+    }
+    .loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+    .loader.hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="tsparticles"></div>
+  <div class="loader" id="loader">
+    <img src="https://i.gifer.com/YCZH.gif" alt="Loading..." width="100" />
+  </div>
+
+  <header>
+    <h1>Sri Harshavardhan Pulluru</h1>
+    <img class="svg-illustration" src="https://cdn-icons-png.flaticon.com/512/1055/1055646.png" alt="Profile Illustration" />
+    <p>Data Analyst | Python, SQL, Power BI, Tableau | Cincinnati, OH</p>
+    <p>Email: pulluru.harsha@gmail.com | <a href="https://www.linkedin.com/in/harshavardhan3636/" target="_blank" style="color: #ecf0f1; text-decoration: underline;">LinkedIn</a></p>
+  </header>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skills-item">
+        <img src="https://img.icons8.com/color/48/python--v1.png" alt="Python" />
+        <span><strong>Languages:</strong> Python, R, SQL</span>
+      </div>
+      <div class="skills-item">
+        <img src="https://img.icons8.com/color/48/power-bi.png" alt="Power BI" />
+        <span><strong>Visualization:</strong> Power BI, Tableau, Looker</span>
+      </div>
+      <div class="skills-item">
+        <img src="https://img.icons8.com/color/48/artificial-intelligence.png" alt="ML" />
+        <span><strong>ML & Analysis:</strong> Regression, Classification, Clustering, A/B Testing, EDA</span>
+      </div>
+      <div class="skills-item">
+        <img src="https://img.icons8.com/color/48/cloud-database.png" alt="Database" />
+        <span><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB, BigQuery, Redshift</span>
+      </div>
+      <div class="skills-item">
+        <img src="https://img.icons8.com/color/48/cloud.png" alt="Cloud" />
+        <span><strong>Cloud & ETL:</strong> AWS, GCP, Azure, Spark, Airflow</span>
+      </div>
+      <div class="skills-item">
+        <img src="https://img.icons8.com/color/48/github--v1.png" alt="Git" />
+        <span><strong>Other Tools:</strong> Git, Jira, Google Analytics, Flask</span>
+      </div>
+    </div>
+
+    <h2>Experience</h2>
+    <div class="experience">
+      <img src="https://img.icons8.com/color/96/bar-chart--v1.png" alt="Experience Icon" />
+      <div class="project-content">
+        <h3>Data Analyst | Inspira Financial (Sep 2024 – Present)</h3>
+        <ul>
+          <li>Built Power BI dashboards reducing reporting time from 2 days to under 2 hours.</li>
+          <li>Improved SQL performance by 65% through optimization and indexing strategies.</li>
+          <li>Reduced client churn by 11% with behavioral data analysis and retention insights.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="experience">
+      <img src="https://img.icons8.com/color/96/database.png" alt="Experience Icon" />
+      <div class="project-content">
+        <h3>Data Analyst | Paytm, India (Sep 2020 – Jul 2023)</h3>
+        <ul>
+          <li>Performed EDA on 100M+ transactions; reduced fraud loss by 18%.</li>
+          <li>Deployed churn prediction and fraud detection APIs with Python (Flask/FastAPI).</li>
+          <li>Cut average query time by 50% via SQL optimization.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>Projects</h2>
+    <div class="project">
+      <img src="https://img.icons8.com/color/100/combo-chart--v1.png" alt="Sales Dashboard Icon" />
+      <div class="project-content">
+        <h3>📊 Sales Performance Dashboard & Forecasting</h3>
+        <p>Forecasted revenues using Prophet/ARIMA (92% accuracy). Built a Power BI dashboard with real-time insights.</p>
+        <a href="https://github.com/yourusername/data-analytics-portfolio/tree/main/Sales_Performance_Dashboard">View Project →</a>
+      </div>
+    </div>
+    <div class="project">
+      <img src="https://img.icons8.com/color/100/customer-insight.png" alt="Customer Churn Icon" />
+      <div class="project-content">
+        <h3>🔁 Customer Churn Analysis</h3>
+        <p>Used SQL, Python, and Tableau to analyze churn trends, improving retention by 10% with data-driven strategies.</p>
+        <a href="https://github.com/yourusername/data-analytics-portfolio/tree/main/Customer_Churn_Analysis">View Project →</a>
+      </div>
+    </div>
+    <div class="project">
+      <img src="https://img.icons8.com/color/100/ai-generated.png" alt="Anemia Classification Icon" />
+      <div class="project-content">
+        <h3>🧬 Anemia Classification Web App</h3>
+        <p>Built a Flask web app integrated with ML models for anemia classification with 99.1% accuracy.</p>
+        <a href="https://github.com/yourusername/data-analytics-portfolio/tree/main/Anemia_Classification_App">View Project →</a>
+      </div>
+    </div>
+
+    <h2>Education</h2>
+    <ul>
+      <li><strong>MS in Information Technology</strong> – University of Cincinnati (Aug 2023 – Dec 2024)</li>
+      <li><strong>B.Tech in Information Technology</strong> – Vidya Jyothi Institute of Technology (Aug 2019 – May 2023)</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sri Harshavardhan Pulluru | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    window.onload = () => document.getElementById("loader").classList.add("hidden");
+    tsParticles.load("tsparticles", {
+      particles: {
+        number: { value: 60 },
+        size: { value: 3 },
+        move: { enable: true, speed: 1 },
+        line_linked: { enable: true, distance: 150, color: "#3498db", opacity: 0.4, width: 1 },
+        color: { value: "#3498db" }
+      }
+    });
+  </script>
+</body>
+</html>
