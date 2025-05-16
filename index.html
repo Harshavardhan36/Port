@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sri Harshavardhan Pulluru | Data Analyst Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pMVMRj7Vl0roUjBNSCUD6CgPQBz7mYxps4XnVlxFzvmGcM8X/78HPO0pKoY5eqh9Mu7N+xL6VXdiDqDCe4V+2g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
@@ -98,6 +98,7 @@
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
       transition: all 0.3s ease;
+      text-align: center;
     }
 
     .card:hover {
@@ -105,17 +106,11 @@
       box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
     }
 
-    .card img {
-      width: 100%;
-      height: 120px;
-      object-fit: cover;
-      border-radius: 8px;
+    .card img.icon {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
       margin-bottom: 10px;
-      transition: transform 0.3s ease;
-    }
-
-    .card img:hover {
-      transform: scale(1.05);
     }
 
     .card h3 {
@@ -194,7 +189,7 @@
   </nav>
 
   <header>
-    <h1>Hellooo! I'm Sri Harshavardhan Pulluru</h1>
+    <h1>Hey! I'm Sri Harshavardhan Pulluru</h1>
     <p>Data Analyst | Python, SQL, Power BI, Tableau | Cincinnati, OH</p>
     <p>Email: pulluru.harsha@gmail.com | Phone: +1 513-259-7669</p>
   </header>
@@ -202,11 +197,11 @@
   <section id="skills">
     <h2>Skills</h2>
     <div class="skills">
-      <div class="card"><img src="https://img.icons8.com/color/96/python.png" alt="Python"><h3>Languages</h3><p>Python, R, SQL</p></div>
-      <div class="card"><img src="https://img.icons8.com/color/96/power-bi.png" alt="Power BI"><h3>Visualization</h3><p>Power BI, Tableau, Looker</p></div>
-      <div class="card"><img src="https://img.icons8.com/color/96/artificial-intelligence.png" alt="ML"><h3>Analytics</h3><p>EDA, A/B Testing, ML Models</p></div>
-      <div class="card"><img src="https://img.icons8.com/color/96/sql.png" alt="DB"><h3>Databases</h3><p>MySQL, PostgreSQL, MongoDB</p></div>
-      <div class="card"><img src="https://img.icons8.com/color/96/cloud.png" alt="Cloud"><h3>Cloud & ETL</h3><p>AWS, GCP, Spark, Airflow</p></div>
+      <div class="card"><img src="https://img.icons8.com/color/96/python.png" alt="Python" class="icon"><h3>Languages</h3><p>Python, R, SQL</p></div>
+      <div class="card"><img src="https://img.icons8.com/color/96/power-bi.png" alt="Power BI" class="icon"><h3>Visualization</h3><p>Power BI, Tableau, Looker</p></div>
+      <div class="card"><img src="https://img.icons8.com/color/96/artificial-intelligence.png" alt="ML" class="icon"><h3>Analytics</h3><p>EDA, A/B Testing, ML Models</p></div>
+      <div class="card"><img src="https://img.icons8.com/color/96/sql.png" alt="Databases" class="icon"><h3>Databases</h3><p>MySQL, PostgreSQL, MongoDB</p></div>
+      <div class="card"><img src="https://img.icons8.com/color/96/cloud.png" alt="Cloud" class="icon"><h3>Cloud & ETL</h3><p>AWS, GCP, Spark, Airflow</p></div>
     </div>
   </section>
 
@@ -214,19 +209,19 @@
     <h2>Projects</h2>
     <div class="projects">
       <div class="card">
-        <img src="https://img.icons8.com/color/480/combo-chart--v1.png" alt="Sales">
+        <img src="https://img.icons8.com/ios-filled/100/combo-chart.png" alt="Sales" class="icon">
         <h3>Sales Forecast Dashboard</h3>
         <p>Forecasted revenue using ARIMA with 92% accuracy; built live Power BI dashboards.</p>
         <a href="https://github.com/yourusername/Sales_Forecast_Dashboard" target="_blank"><button>View Project</button></a>
       </div>
       <div class="card">
-        <img src="https://img.icons8.com/color/480/customer-insight.png" alt="Churn">
+        <img src="https://img.icons8.com/ios-filled/100/customer-insight.png" alt="Churn" class="icon">
         <h3>Churn Analysis</h3>
         <p>Reduced churn by 10% using customer segmentation and SQL analysis.</p>
         <a href="https://github.com/yourusername/Customer_Churn_Analysis" target="_blank"><button>View Project</button></a>
       </div>
       <div class="card">
-        <img src="https://img.icons8.com/color/480/microscope.png" alt="Anemia">
+        <img src="https://img.icons8.com/ios-filled/100/microscope.png" alt="Anemia" class="icon">
         <h3>Anemia Classifier App</h3>
         <p>Flask web app with ML backend achieving 99.1% accuracy on classification.</p>
         <a href="https://github.com/yourusername/Anemia_Classifier_App" target="_blank"><button>View Project</button></a>
