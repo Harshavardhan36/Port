@@ -1,5 +1,7 @@
 # Sri Harshavardhan Pulluru – Data Analyst Portfolio
 
+**Live Demo:** [Click here to view the portfolio](https://harshavardhan36.github.io/Port/)
+
 This repository contains the source code for my **personal portfolio website** showcasing my skills, projects, and professional experience as a Data Analyst.  
 The site is built with **HTML5, CSS3**, and a responsive design approach, ensuring a clean, professional appearance on desktop and mobile devices.
 
@@ -31,11 +33,18 @@ The portfolio serves as a central hub for:
 
 ## Technology Stack
 
-- **HTML5** – Structure and semantic markup.
-- **CSS3** – Styling, layout (Flexbox/Grid), responsive design, and transitions.
-- **Google Fonts** – Custom typography using Roboto.
-- **Font Awesome** – Iconography for visual enhancement.
-- **Responsive Design** – Optimized for both desktop and mobile devices.
+**Languages & Frameworks:**
+- HTML5
+- CSS3
+
+**Design & Layout:**
+- Flexbox/Grid
+- Google Fonts (Roboto)
+- Font Awesome Icons
+
+**Performance & Responsiveness:**
+- Mobile-first design
+- Cross-browser compatibility
 
 ---
 
@@ -79,17 +88,12 @@ cd <your-portfolio-repo>
 
 ## Deployment
 
-The site can be hosted easily using:
-- **GitHub Pages**
-- **Netlify**
-- **Vercel**
-- **Render (static hosting)**
+The portfolio is live and accessible at:  
+[https://harshavardhan36.github.io/Port/](https://harshavardhan36.github.io/Port/)
 
-For GitHub Pages:
-1. Push your code to a public GitHub repository.
-2. Go to **Settings** → **Pages**.
-3. Set source to `main` branch, `/ (root)` folder.
-4. Save and visit the provided URL.
+To redeploy or update:
+1. Push changes to the `main` branch of this repository.
+2. GitHub Pages will automatically update the live site.
 
 ---
 
